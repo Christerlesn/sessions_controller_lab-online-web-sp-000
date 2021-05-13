@@ -7,7 +7,10 @@ class SessionsController < ApplicationController
     if session[:name] == nil
       redirect_to "/login"
     elsif session[:name] = params[:name]
-    redirect_to "/"
+      redirect_to "/"
+    else
+      redirect_to "/"
+    end
   end
 
   def destroy
