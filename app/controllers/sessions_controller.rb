@@ -9,7 +9,6 @@ class SessionsController < ApplicationController
     elsif session[:name].empty? ||= nil
       redirect_to :new
     else
-      redirect_to '/login'
     end
   end
 
