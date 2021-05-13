@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
     if session[:name] = params[:name]
       redirect_to "/"
     elsif session[:name].empty? ||= nil
-      redirect_to '/login'
+      redirect_to :new
     else
       redirect_to '/login'
     end
